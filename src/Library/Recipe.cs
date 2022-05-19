@@ -15,9 +15,17 @@ namespace Full_GRASP_And_SOLID
 
         public Product FinalProduct { get; set; }
 
-        public void AddStep(Step step)
+        /* 
+        El metodo addstep dentro de recipe cambiamos la responsabilidad de program a el para ahora
+        tener todos los datos para instanciar un Step que es el que usaremos luego para el programa ademas
+        de agregarlo en steps.
+        */
+
+        public Step AddStep(Product input, double quantity, Equipment equipment, int time)
         {
+            Step step = new Step(input, quantity, equipment, time);
             this.steps.Add(step);
+            return step;
         }
 
         public void RemoveStep(Step step)

@@ -3,6 +3,8 @@
 // Copyright (c) Programación II. Derechos reservados.
 // </copyright>
 //-------------------------------------------------------------------------------
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Full_GRASP_And_SOLID
 {
